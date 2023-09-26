@@ -10,7 +10,7 @@ def encode(s):
         raise ValueError
     s = s.ljust(1000, "a")
     for c in s:
-        if c in ["ä", "ö", "å", "+"]:
+        if c in ["ä", "ö", "å"]:
             raise ValueError
         if c.isalpha():
             if c.islower():
